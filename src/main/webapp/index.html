@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>Create Customer</h2>
+        <div class="bs-example">
+            <form action="http://localhost:8080/Project4Customer/webapi/customer/savecust" method="post">
+            
+                <div class="form-group">
+                    <label for="CustomerName">Customer Name</label>
+                    <input type="text" class="form-control" id="inputCustName" name="inputCustName" placeholder="Customer Name">
+                </div>
+            <div class="form-group">
+                <label for="Address">Address</label>
+                <input type="text" class="form-control" id="inputCustAddress" name="inputCustAddress" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender</label>
+                <input type="text" class="form-control" id="inputGender" name="inputGender" placeholder="Gender">
+            </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+           
+        </div>
+           <a href="webapi/customer/allcustomer" class="btn btn-primary">Show All Customers</a>
+          
+    </body>
+</html>
